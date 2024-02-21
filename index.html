@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Quản lí sinh viên</h1>
+    <br>
+    <label for="numStudents">Nhập số lượng sinh viên:</label>
+    <input type="number" id="numStudents" name="numStudents"><br>
+    <button onclick="submitNumStudents()">Nhập</button>
+
+    <div id="studentFields" style="display: none;">
+        <h2>Thông tin sinh viên</h2>
+        <div id="studentContainer"></div>
+        <button onclick="submitStudents()">Hiển thị</button>
+    </div>
+
+    <div id="studentInfoDisplay"></div>
+    <script src="index.js"></script>
+</body>
+</html>
